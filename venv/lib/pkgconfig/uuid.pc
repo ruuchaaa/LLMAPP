@@ -1,0 +1,11 @@
+prefix=/home/rucha/GeminiLLMAPP/venv
+exec_prefix=/home/rucha/GeminiLLMAPP/venv
+libdir=/home/rucha/GeminiLLMAPP/venv/lib
+includedir=/home/rucha/GeminiLLMAPP/venv/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.32.1
+Requires:
+Cflags: -I${includedir}/uuid
+Libs: -L${libdir} -luuid

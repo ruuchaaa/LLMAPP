@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/home/rucha/GeminiLLMAPP/venv
+exec_prefix=/home/rucha/GeminiLLMAPP/venv
+libdir=/home/rucha/GeminiLLMAPP/venv/lib
+includedir=/home/rucha/GeminiLLMAPP/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
