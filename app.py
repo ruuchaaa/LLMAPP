@@ -15,7 +15,7 @@ def get_gemini_response(question):
 
 st.set_page_config(page_title="Q$A DEMO")
 
-st.header(Gemini LLM Application)
+st.header("Gemini LLM Application")
 
 input = st.text_input("Input: ",key="input")
 
